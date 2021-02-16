@@ -16,3 +16,10 @@ jobs:
       fail-fast: false
       matrix:
         compiler:
+        - gcc
+        - clang
+    steps:
+    - name: Checkout the code
+      uses: actions/checkout@v2
+    - name: Run with the compiler ${{ matrix.compiler }}
+      run: |
