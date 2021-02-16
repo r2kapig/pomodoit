@@ -23,3 +23,7 @@ jobs:
       uses: actions/checkout@v2
     - name: Run with the compiler ${{ matrix.compiler }}
       run: |
+        sudo apt-get install -y $compiler
+        CC=$compiler make test
+      env:
+        compiler: ${{ matrix.compiler }}
