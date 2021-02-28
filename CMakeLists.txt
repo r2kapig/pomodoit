@@ -9,4 +9,4 @@ if(NOT CMAKE_C_FLAGS_DEBUG)
 	set(CMAKE_C_FLAGS_DEBUG "-g -ggdb")
 endif()
 
-set(s
+set(sources a
