@@ -11,4 +11,4 @@ endif()
 
 set(sources argparse.c)
 
-option(ARGP
+option(ARGPARSE_S
