@@ -9,4 +9,6 @@ if(NOT CMAKE_C_FLAGS_DEBUG)
 	set(CMAKE_C_FLAGS_DEBUG "-g -ggdb")
 endif()
 
-set(sources a
+set(sources argparse.c)
+
+op
