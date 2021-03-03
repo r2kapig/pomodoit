@@ -11,4 +11,5 @@ endif()
 
 set(sources argparse.c)
 
-option(ARGPARSE_SHARED "Build shared librar
+option(ARGPARSE_SHARED "Build shared library" ON)
+optio
