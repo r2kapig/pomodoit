@@ -12,4 +12,4 @@ endif()
 set(sources argparse.c)
 
 option(ARGPARSE_SHARED "Build shared library" ON)
-option(ARGP
+option(ARGPARSE_STATI
