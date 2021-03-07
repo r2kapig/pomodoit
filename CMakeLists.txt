@@ -15,4 +15,4 @@ option(ARGPARSE_SHARED "Build shared library" ON)
 option(ARGPARSE_STATIC "Build static library" ON)
 
 if(ARGPARSE_SHARED)
-	add_library(argparse_shared SH
+	add_library(argparse_shared SHARED ${
