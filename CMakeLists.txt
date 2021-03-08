@@ -16,4 +16,4 @@ option(ARGPARSE_STATIC "Build static library" ON)
 
 if(ARGPARSE_SHARED)
 	add_library(argparse_shared SHARED ${sources})
-	target_inclu
+	target_include_direc
