@@ -18,3 +18,5 @@ if(ARGPARSE_SHARED)
 	add_library(argparse_shared SHARED ${sources})
 	target_include_directories(argparse_shared PUBLIC .)
 	set_target_properties(argparse_shared PROPERTIES OUTPUT_NAME argparse)
+endif()
+if(
