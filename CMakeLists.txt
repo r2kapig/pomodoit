@@ -19,4 +19,4 @@ if(ARGPARSE_SHARED)
 	target_include_directories(argparse_shared PUBLIC .)
 	set_target_properties(argparse_shared PROPERTIES OUTPUT_NAME argparse)
 endif()
-if(ARGPA
+if(ARGPARSE_STATIC
