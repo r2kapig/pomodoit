@@ -19,4 +19,5 @@ if(ARGPARSE_SHARED)
 	target_include_directories(argparse_shared PUBLIC .)
 	set_target_properties(argparse_shared PROPERTIES OUTPUT_NAME argparse)
 endif()
-if(ARGPARSE_STATIC
+if(ARGPARSE_STATIC)
+	add_librar
