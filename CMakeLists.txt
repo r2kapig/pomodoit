@@ -20,4 +20,4 @@ if(ARGPARSE_SHARED)
 	set_target_properties(argparse_shared PROPERTIES OUTPUT_NAME argparse)
 endif()
 if(ARGPARSE_STATIC)
-	add_librar
+	add_library(argpa
