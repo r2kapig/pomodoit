@@ -20,4 +20,5 @@ if(ARGPARSE_SHARED)
 	set_target_properties(argparse_shared PROPERTIES OUTPUT_NAME argparse)
 endif()
 if(ARGPARSE_STATIC)
-	add_library(argparse STATIC ${s
+	add_library(argparse STATIC ${sources})
+	targe
