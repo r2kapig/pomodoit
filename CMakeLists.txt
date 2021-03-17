@@ -21,4 +21,4 @@ if(ARGPARSE_SHARED)
 endif()
 if(ARGPARSE_STATIC)
 	add_library(argparse STATIC ${sources})
-	target_inclu
+	target_include_direc
