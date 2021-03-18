@@ -22,4 +22,5 @@ endif()
 if(ARGPARSE_STATIC)
 	add_library(argparse STATIC ${sources})
 	target_include_directories(argparse PUBLIC .)
-endif
+endif()
+if(NOT (
