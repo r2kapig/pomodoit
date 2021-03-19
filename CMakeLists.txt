@@ -23,4 +23,4 @@ if(ARGPARSE_STATIC)
 	add_library(argparse STATIC ${sources})
 	target_include_directories(argparse PUBLIC .)
 endif()
-if(NOT (ARGPARSE_STA
+if(NOT (ARGPARSE_STATIC OR ARGPA
