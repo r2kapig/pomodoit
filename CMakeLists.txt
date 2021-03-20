@@ -23,4 +23,5 @@ if(ARGPARSE_STATIC)
 	add_library(argparse STATIC ${sources})
 	target_include_directories(argparse PUBLIC .)
 endif()
-if(NOT (ARGPARSE_STATIC OR ARGPARSE_SHARED)
+if(NOT (ARGPARSE_STATIC OR ARGPARSE_SHARED))
+	add_libra
