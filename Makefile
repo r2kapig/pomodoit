@@ -1,3 +1,12 @@
 
 # Defaults
 CFLAGS ?= -O3 -g -ggdb
+LDFLAGS ?=
+CROSS_COMPILE =
+
+BASIC_CFLAGS = -Wall -Wextra -fPIC
+BASIC_LDFLAGS = 
+
+# We use ALL_* variants
+ALL_CFLAGS = $(BASIC_CFLAGS) $(CFLAGS)
+ALL_LDFLAGS = $(BASIC_LDFLAGS) $(LDFLAGS)
