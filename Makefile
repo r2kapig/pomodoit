@@ -30,3 +30,9 @@ endif
 all: $(DYLIBNAME) $(STLIBNAME)
 
 OBJS += argparse.o
+
+$(OBJS): %.o: %.c argparse.h
+	$(CROSS_COMPILE)gcc -o $*.o -c $(ALL_CFLAGS) $<
+
+$(DYLIBNAME): argparse.o
+	$(DYLIB_MAKE_CMD) $^
