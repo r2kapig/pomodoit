@@ -36,3 +36,15 @@ $(OBJS): %.o: %.c argparse.h
 
 $(DYLIBNAME): argparse.o
 	$(DYLIB_MAKE_CMD) $^
+
+$(STLIBNAME): argparse.o
+	$(STLIB_MAKE_CMD) $^
+
+test: 
+	make -C tests/ test
+
+clean:
+	rm -rf *.[ao]
+	rm -rf *.so
+	rm -rf *.dylib
+	make -C tests/ clean
