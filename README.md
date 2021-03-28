@@ -17,3 +17,14 @@ parsing solutions.
 The program defines what arguments it requires, and `argparse` will figure
 out how to parse those out of `argc` and `argv`, it also automatically
 generates help and usage messages and issues errors when users give the
+program invalid arguments.
+
+## Features
+
+ - handles both optional and positional arguments
+ - produces highly informative usage messages
+ - issues errors when given invalid arguments
+
+There are basically three types of options:
+
+ - boolean options
