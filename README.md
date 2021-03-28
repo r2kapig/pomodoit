@@ -28,3 +28,12 @@ program invalid arguments.
 There are basically three types of options:
 
  - boolean options
+ - options with mandatory argument
+ - options with optional argument
+
+There are basically two forms of options:
+
+ - short option consist of one dash (`-`) and one alphanumeric character.
+ - long option begin with two dashes (`--`) and some alphanumeric characters.
+
+Short options may be bundled, e.g. `-a -b` can be specified as `-ab`.
