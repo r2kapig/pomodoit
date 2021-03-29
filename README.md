@@ -37,3 +37,12 @@ There are basically two forms of options:
  - long option begin with two dashes (`--`) and some alphanumeric characters.
 
 Short options may be bundled, e.g. `-a -b` can be specified as `-ab`.
+
+Options are case-sensitive.
+
+Options and non-option arguments can clearly be separated using the `--` option.
+
+## Examples
+
+- [basic](tests/basic.c)
+- [subcommands](tests/subcommands.c)
