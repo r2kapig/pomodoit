@@ -1,2 +1,2 @@
 /**
- * Copyri
+ * Copyright (C)
