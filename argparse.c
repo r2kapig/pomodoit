@@ -1,2 +1,2 @@
 /**
- * Copyright (C) 2012-2015 Yech
+ * Copyright (C) 2012-2015 Yecheng Fu <cof
