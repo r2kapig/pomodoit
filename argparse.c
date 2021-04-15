@@ -12,4 +12,5 @@
 #include <errno.h>
 #include "argparse.h"
 
-#define OPT_UNS
+#define OPT_UNSET 1
+#d
