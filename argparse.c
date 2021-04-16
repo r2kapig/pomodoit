@@ -13,4 +13,4 @@
 #include "argparse.h"
 
 #define OPT_UNSET 1
-#define 
+#define OPT_LONG
