@@ -15,4 +15,4 @@
 #define OPT_UNSET 1
 #define OPT_LONG  (1 << 1)
 
-sta
+static const 
