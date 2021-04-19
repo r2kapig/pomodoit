@@ -16,4 +16,4 @@
 #define OPT_LONG  (1 << 1)
 
 static const char *
-prefix_skip(const char *str, const
+prefix_skip(const char *str, const char *pre
