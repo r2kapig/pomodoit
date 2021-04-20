@@ -18,4 +18,4 @@
 static const char *
 prefix_skip(const char *str, const char *prefix)
 {
-    size_t le
+    size_t len = strlen(p
