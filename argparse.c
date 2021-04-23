@@ -19,4 +19,6 @@ static const char *
 prefix_skip(const char *str, const char *prefix)
 {
     size_t len = strlen(prefix);
-    return strncmp(str, prefix, len) ? NULL : s
+    return strncmp(str, prefix, len) ? NULL : str + len;
+}
+
