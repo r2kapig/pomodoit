@@ -22,3 +22,4 @@ prefix_skip(const char *str, const char *prefix)
     return strncmp(str, prefix, len) ? NULL : str + len;
 }
 
+static i
