@@ -23,4 +23,4 @@ prefix_skip(const char *str, const char *prefix)
 }
 
 static int
-prefix_cmp(const char *st
+prefix_cmp(const char *str, const ch
