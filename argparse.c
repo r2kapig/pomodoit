@@ -26,4 +26,5 @@ static int
 prefix_cmp(const char *str, const char *prefix)
 {
     for (;; str++, prefix++)
-        if (!*pre
+        if (!*prefix) {
+ 
