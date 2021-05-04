@@ -28,4 +28,4 @@ prefix_cmp(const char *str, const char *prefix)
     for (;; str++, prefix++)
         if (!*prefix) {
             return 0;
-        } else if (*st
+        } else if (*str != *prefix
