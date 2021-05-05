@@ -29,4 +29,4 @@ prefix_cmp(const char *str, const char *prefix)
         if (!*prefix) {
             return 0;
         } else if (*str != *prefix) {
-            return (unsigned char)*pr
+            return (unsigned char)*prefix -
