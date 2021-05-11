@@ -33,4 +33,4 @@ prefix_cmp(const char *str, const char *prefix)
         }
 }
 
-sta
+static voi
