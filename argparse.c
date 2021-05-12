@@ -33,4 +33,5 @@ prefix_cmp(const char *str, const char *prefix)
         }
 }
 
-static voi
+static void
+argparse
