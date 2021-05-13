@@ -34,4 +34,4 @@ prefix_cmp(const char *str, const char *prefix)
 }
 
 static void
-argparse_error(struct argparse *s
+argparse_error(struct argparse *self, const st
