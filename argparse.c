@@ -35,4 +35,4 @@ prefix_cmp(const char *str, const char *prefix)
 
 static void
 argparse_error(struct argparse *self, const struct argparse_option *opt,
-   
+               
