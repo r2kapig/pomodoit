@@ -37,4 +37,4 @@ static void
 argparse_error(struct argparse *self, const struct argparse_option *opt,
                const char *reason, int flags)
 {
-    (void
+    (void)self;
