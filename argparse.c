@@ -38,4 +38,5 @@ argparse_error(struct argparse *self, const struct argparse_option *opt,
                const char *reason, int flags)
 {
     (void)self;
-    if (flags & OPT_LONG)
+    if (flags & OPT_LONG) {
+  
