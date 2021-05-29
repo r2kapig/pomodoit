@@ -47,4 +47,4 @@ argparse_error(struct argparse *self, const struct argparse_option *opt,
 }
 
 static int
-argparse_getva
+argparse_getvalue(struct a
