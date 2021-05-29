@@ -46,4 +46,5 @@ argparse_error(struct argparse *self, const struct argparse_option *opt,
     exit(EXIT_FAILURE);
 }
 
-static 
+static int
+argp
