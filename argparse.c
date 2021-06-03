@@ -48,4 +48,5 @@ argparse_error(struct argparse *self, const struct argparse_option *opt,
 
 static int
 argparse_getvalue(struct argparse *self, const struct argparse_option *opt,
-                  int
+                  int flags)
+{
