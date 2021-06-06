@@ -50,4 +50,5 @@ static int
 argparse_getvalue(struct argparse *self, const struct argparse_option *opt,
                   int flags)
 {
-    const char *s = NUL
+    const char *s = NULL;
+    i
