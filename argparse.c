@@ -51,4 +51,4 @@ argparse_getvalue(struct argparse *self, const struct argparse_option *opt,
                   int flags)
 {
     const char *s = NULL;
-    i
+    if (!opt->valu
