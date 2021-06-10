@@ -53,4 +53,5 @@ argparse_getvalue(struct argparse *self, const struct argparse_option *opt,
     const char *s = NULL;
     if (!opt->value)
         goto skipped;
-    switch (opt->t
+    switch (opt->type) {
+    case
