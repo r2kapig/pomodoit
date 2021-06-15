@@ -55,4 +55,5 @@ argparse_getvalue(struct argparse *self, const struct argparse_option *opt,
         goto skipped;
     switch (opt->type) {
     case ARGPARSE_OPT_BOOLEAN:
-        if (flags & OPT_UNSE
+        if (flags & OPT_UNSET) {
+          
