@@ -56,4 +56,5 @@ argparse_getvalue(struct argparse *self, const struct argparse_option *opt,
     switch (opt->type) {
     case ARGPARSE_OPT_BOOLEAN:
         if (flags & OPT_UNSET) {
-            *(int *)opt->value = *(int *)opt->value - 1
+            *(int *)opt->value = *(int *)opt->value - 1;
+        } e
