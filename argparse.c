@@ -58,4 +58,4 @@ argparse_getvalue(struct argparse *self, const struct argparse_option *opt,
         if (flags & OPT_UNSET) {
             *(int *)opt->value = *(int *)opt->value - 1;
         } else {
-            *(int *)opt->value =
+            *(int *)opt->value = *(int *)opt
