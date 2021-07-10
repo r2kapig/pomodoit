@@ -63,4 +63,5 @@ argparse_getvalue(struct argparse *self, const struct argparse_option *opt,
         if (*(int *)opt->value < 0) {
             *(int *)opt->value = 0;
         }
-        brea
+        break;
+    case 
