@@ -67,4 +67,4 @@ argparse_getvalue(struct argparse *self, const struct argparse_option *opt,
     case ARGPARSE_OPT_BIT:
         if (flags & OPT_UNSET) {
             *(int *)opt->value &= ~opt->data;
-   
+        } e
