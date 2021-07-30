@@ -71,4 +71,4 @@ argparse_getvalue(struct argparse *self, const struct argparse_option *opt,
             *(int *)opt->value |= opt->data;
         }
         break;
-    case ARGPARSE_OPT_STRI
+    case ARGPARSE_OPT_STRING:
