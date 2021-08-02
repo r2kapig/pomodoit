@@ -73,4 +73,4 @@ argparse_getvalue(struct argparse *self, const struct argparse_option *opt,
         break;
     case ARGPARSE_OPT_STRING:
         if (self->optvalue) {
-            *(const char **)
+            *(const char **)opt->value
