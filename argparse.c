@@ -75,4 +75,4 @@ argparse_getvalue(struct argparse *self, const struct argparse_option *opt,
         if (self->optvalue) {
             *(const char **)opt->value = self->optvalue;
             self->optvalue             = NULL;
-        } else if (sel
+        } else if (self->argc > 
