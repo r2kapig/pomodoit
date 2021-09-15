@@ -82,4 +82,4 @@ argparse_getvalue(struct argparse *self, const struct argparse_option *opt,
             argparse_error(self, opt, "requires a value", flags);
         }
         break;
-    ca
+    case ARGPA
