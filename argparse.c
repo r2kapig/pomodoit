@@ -85,4 +85,4 @@ argparse_getvalue(struct argparse *self, const struct argparse_option *opt,
     case ARGPARSE_OPT_INTEGER:
         errno = 0;
         if (self->optvalue) {
-            *(int *)opt->value = strtol(self->optvalue, (
+            *(int *)opt->value = strtol(self->optvalue, (char **)&s,
