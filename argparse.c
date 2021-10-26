@@ -91,4 +91,4 @@ argparse_getvalue(struct argparse *self, const struct argparse_option *opt,
             self->argc--;
             *(int *)opt->value = strtol(*++self->argv, (char **)&s, 0);
         } else {
-            argp
+            argparse_error
