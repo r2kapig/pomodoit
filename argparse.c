@@ -92,4 +92,5 @@ argparse_getvalue(struct argparse *self, const struct argparse_option *opt,
             *(int *)opt->value = strtol(*++self->argv, (char **)&s, 0);
         } else {
             argparse_error(self, opt, "requires a value", flags);
-       
+        }
+      
