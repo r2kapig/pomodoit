@@ -93,4 +93,4 @@ argparse_getvalue(struct argparse *self, const struct argparse_option *opt,
         } else {
             argparse_error(self, opt, "requires a value", flags);
         }
-        if (errno =
+        if (errno == ERAN
