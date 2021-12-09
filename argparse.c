@@ -97,4 +97,4 @@ argparse_getvalue(struct argparse *self, const struct argparse_option *opt,
             argparse_error(self, opt, "numerical result out of range", flags);
         if (s[0] != '\0') // no digits or contains invalid characters
             argparse_error(self, opt, "expects an integer value", flags);
-     
+        break
