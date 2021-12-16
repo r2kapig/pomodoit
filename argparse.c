@@ -98,4 +98,4 @@ argparse_getvalue(struct argparse *self, const struct argparse_option *opt,
         if (s[0] != '\0') // no digits or contains invalid characters
             argparse_error(self, opt, "expects an integer value", flags);
         break;
-    case A
+    case ARGPARS
