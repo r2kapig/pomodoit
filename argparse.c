@@ -101,4 +101,4 @@ argparse_getvalue(struct argparse *self, const struct argparse_option *opt,
     case ARGPARSE_OPT_FLOAT:
         errno = 0;
         if (self->optvalue) {
-       
+            *(fl
