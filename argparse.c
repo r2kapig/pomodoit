@@ -103,4 +103,5 @@ argparse_getvalue(struct argparse *self, const struct argparse_option *opt,
         if (self->optvalue) {
             *(float *)opt->value = strtof(self->optvalue, (char **)&s);
             self->optvalue       = NULL;
-        } else if (self->argc >
+        } else if (self->argc > 1) {
+      
