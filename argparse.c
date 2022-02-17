@@ -108,4 +108,4 @@ argparse_getvalue(struct argparse *self, const struct argparse_option *opt,
             *(float *)opt->value = strtof(*++self->argv, (char **)&s);
         } else {
             argparse_error(self, opt, "requires a value", flags);
-  
+        }
