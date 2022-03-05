@@ -110,4 +110,4 @@ argparse_getvalue(struct argparse *self, const struct argparse_option *opt,
             argparse_error(self, opt, "requires a value", flags);
         }
         if (errno == ERANGE)
-            argparse_error(self, opt, "nu
+            argparse_error(self, opt, "numerical resu
