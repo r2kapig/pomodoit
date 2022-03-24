@@ -112,4 +112,4 @@ argparse_getvalue(struct argparse *self, const struct argparse_option *opt,
         if (errno == ERANGE)
             argparse_error(self, opt, "numerical result out of range", flags);
         if (s[0] != '\0') // no digits or contains invalid characters
-            argparse_error(self, opt, "expects a numerical
+            argparse_error(self, opt, "expects a numerical v
