@@ -114,4 +114,5 @@ argparse_getvalue(struct argparse *self, const struct argparse_option *opt,
         if (s[0] != '\0') // no digits or contains invalid characters
             argparse_error(self, opt, "expects a numerical value", flags);
         break;
-    de
+    default:
+        a
