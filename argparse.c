@@ -115,4 +115,5 @@ argparse_getvalue(struct argparse *self, const struct argparse_option *opt,
             argparse_error(self, opt, "expects a numerical value", flags);
         break;
     default:
-        a
+        assert(0);
+ 
