@@ -116,4 +116,6 @@ argparse_getvalue(struct argparse *self, const struct argparse_option *opt,
         break;
     default:
         assert(0);
- 
+    }
+
+skip
