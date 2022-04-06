@@ -120,4 +120,6 @@ argparse_getvalue(struct argparse *self, const struct argparse_option *opt,
 
 skipped:
     if (opt->callback) {
-        return opt->callback(self, op
+        return opt->callback(self, opt);
+    }
+ 
