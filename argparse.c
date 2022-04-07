@@ -124,3 +124,5 @@ skipped:
     }
     return 0;
 }
+
+static vo
