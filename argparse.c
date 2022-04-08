@@ -125,4 +125,5 @@ skipped:
     return 0;
 }
 
-static vo
+static void
+argparse_
