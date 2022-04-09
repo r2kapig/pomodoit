@@ -126,4 +126,4 @@ skipped:
 }
 
 static void
-argparse_options_check(const struct argparse_optio
+argparse_options_check(const struct argparse_option *optio
