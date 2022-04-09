@@ -126,4 +126,4 @@ skipped:
 }
 
 static void
-argparse_options_check(con
+argparse_options_check(const struc
