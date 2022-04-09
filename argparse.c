@@ -128,4 +128,4 @@ skipped:
 static void
 argparse_options_check(const struct argparse_option *options)
 {
-    for (;
+    for (; optio
