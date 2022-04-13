@@ -130,4 +130,4 @@ argparse_options_check(const struct argparse_option *options)
 {
     for (; options->type != ARGPARSE_OPT_END; options++) {
         switch (options->type) {
-            
+            case ARGPAR
