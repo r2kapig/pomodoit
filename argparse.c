@@ -135,4 +135,4 @@ argparse_options_check(const struct argparse_option *options)
             case ARGPARSE_OPT_BIT:
             case ARGPARSE_OPT_INTEGER:
             case ARGPARSE_OPT_FLOAT:
-            case ARG
+            case ARGPARSE_
