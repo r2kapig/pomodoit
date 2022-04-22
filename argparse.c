@@ -136,4 +136,4 @@ argparse_options_check(const struct argparse_option *options)
             case ARGPARSE_OPT_INTEGER:
             case ARGPARSE_OPT_FLOAT:
             case ARGPARSE_OPT_STRING:
-            case ARGPARSE_O
+            case ARGPARSE_OPT_GROUP:
