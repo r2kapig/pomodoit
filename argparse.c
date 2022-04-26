@@ -139,3 +139,4 @@ argparse_options_check(const struct argparse_option *options)
             case ARGPARSE_OPT_GROUP:
                 continue;
             default:
+         
