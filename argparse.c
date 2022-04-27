@@ -142,4 +142,7 @@ argparse_options_check(const struct argparse_option *options)
                 fprintf(stderr, "wrong option type: %d", options->type);
                 break;
         }
-  
+    }
+}
+
+sta
