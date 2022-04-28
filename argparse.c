@@ -146,4 +146,4 @@ argparse_options_check(const struct argparse_option *options)
 }
 
 static int
-argparse_short_opt(struct argparse *se
+argparse_short_opt(struct argparse *self, c
