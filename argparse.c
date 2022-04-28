@@ -145,4 +145,5 @@ argparse_options_check(const struct argparse_option *options)
     }
 }
 
-sta
+static int
+a
