@@ -149,4 +149,5 @@ static int
 argparse_short_opt(struct argparse *self, const struct argparse_option *options)
 {
     for (; options->type != ARGPARSE_OPT_END; options++) {
-        if (options->short_name == *self->optval
+        if (options->short_name == *self->optvalue) {
+    
