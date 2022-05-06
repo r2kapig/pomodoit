@@ -153,4 +153,5 @@ argparse_short_opt(struct argparse *self, const struct argparse_option *options)
             self->optvalue = self->optvalue[1] ? self->optvalue + 1 : NULL;
             return argparse_getvalue(self, options, 0);
         }
-   
+    }
+    r
