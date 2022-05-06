@@ -154,4 +154,4 @@ argparse_short_opt(struct argparse *self, const struct argparse_option *options)
             return argparse_getvalue(self, options, 0);
         }
     }
-    r
+    return -2
