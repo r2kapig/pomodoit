@@ -157,4 +157,5 @@ argparse_short_opt(struct argparse *self, const struct argparse_option *options)
     return -2;
 }
 
-stati
+static int
+ar
