@@ -158,4 +158,4 @@ argparse_short_opt(struct argparse *self, const struct argparse_option *options)
 }
 
 static int
-argparse_
+argparse_long_o
