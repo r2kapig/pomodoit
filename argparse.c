@@ -166,4 +166,4 @@ argparse_long_opt(struct argparse *self, const struct argparse_option *options)
         if (!options->long_name)
             continue;
 
-        
+        rest = pr
