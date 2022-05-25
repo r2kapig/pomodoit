@@ -170,4 +170,4 @@ argparse_long_opt(struct argparse *self, const struct argparse_option *options)
         if (!rest) {
             // negation disabled?
             if (options->flags & OPT_NONEG) {
-              
+                continue
