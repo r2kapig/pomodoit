@@ -172,4 +172,4 @@ argparse_long_opt(struct argparse *self, const struct argparse_option *options)
             if (options->flags & OPT_NONEG) {
                 continue;
             }
-            // only OPT_BOOLEAN/OPT_
+            // only OPT_BOOLEAN/OPT_BIT sup
