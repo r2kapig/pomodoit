@@ -173,4 +173,4 @@ argparse_long_opt(struct argparse *self, const struct argparse_option *options)
                 continue;
             }
             // only OPT_BOOLEAN/OPT_BIT supports negation
-            if (options->type != ARGP
+            if (options->type != ARGPARSE_OP
