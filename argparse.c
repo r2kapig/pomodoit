@@ -176,4 +176,6 @@ argparse_long_opt(struct argparse *self, const struct argparse_option *options)
             if (options->type != ARGPARSE_OPT_BOOLEAN && options->type !=
                 ARGPARSE_OPT_BIT) {
                 continue;
-    
+            }
+
+  
