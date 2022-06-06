@@ -178,4 +178,4 @@ argparse_long_opt(struct argparse *self, const struct argparse_option *options)
                 continue;
             }
 
-            if (prefi
+            if (prefix_cmp(
