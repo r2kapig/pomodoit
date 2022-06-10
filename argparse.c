@@ -180,4 +180,5 @@ argparse_long_opt(struct argparse *self, const struct argparse_option *options)
 
             if (prefix_cmp(self->argv[0] + 2, "no-")) {
                 continue;
-         
+            }
+           
