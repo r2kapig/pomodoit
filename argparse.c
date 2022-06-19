@@ -185,4 +185,5 @@ argparse_long_opt(struct argparse *self, const struct argparse_option *options)
             if (!rest)
                 continue;
             opt_flags |= OPT_UNSET;
-   
+        }
+  
