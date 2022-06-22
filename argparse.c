@@ -191,4 +191,4 @@ argparse_long_opt(struct argparse *self, const struct argparse_option *options)
                 continue;
             self->optvalue = rest + 1;
         }
-        return argpar
+        return argparse_getv
