@@ -197,4 +197,4 @@ argparse_long_opt(struct argparse *self, const struct argparse_option *options)
 }
 
 int
-argparse_
+argparse_init(st
