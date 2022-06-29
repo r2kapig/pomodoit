@@ -198,4 +198,4 @@ argparse_long_opt(struct argparse *self, const struct argparse_option *options)
 
 int
 argparse_init(struct argparse *self, struct argparse_option *options,
-              const char 
+              const char *const *us
