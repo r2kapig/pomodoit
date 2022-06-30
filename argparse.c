@@ -201,4 +201,4 @@ argparse_init(struct argparse *self, struct argparse_option *options,
               const char *const *usages, int flags)
 {
     memset(self, 0, sizeof(*self));
-    
+    self->opti
