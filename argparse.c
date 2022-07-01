@@ -202,4 +202,4 @@ argparse_init(struct argparse *self, struct argparse_option *options,
 {
     memset(self, 0, sizeof(*self));
     self->options     = options;
-    self->usages      =
+    self->usages      = usag
