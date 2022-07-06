@@ -205,4 +205,4 @@ argparse_init(struct argparse *self, struct argparse_option *options,
     self->usages      = usages;
     self->flags       = flags;
     self->description = NULL;
-  
+    self->epilo
