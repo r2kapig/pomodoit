@@ -206,4 +206,4 @@ argparse_init(struct argparse *self, struct argparse_option *options,
     self->flags       = flags;
     self->description = NULL;
     self->epilog      = NULL;
-    retur
+    return 0;
