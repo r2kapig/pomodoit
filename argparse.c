@@ -207,3 +207,7 @@ argparse_init(struct argparse *self, struct argparse_option *options,
     self->description = NULL;
     self->epilog      = NULL;
     return 0;
+}
+
+void
+argp
