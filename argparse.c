@@ -210,4 +210,4 @@ argparse_init(struct argparse *self, struct argparse_option *options,
 }
 
 void
-argparse_descri
+argparse_describe(struct a
