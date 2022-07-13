@@ -213,4 +213,4 @@ void
 argparse_describe(struct argparse *self, const char *description,
                   const char *epilog)
 {
-    sel
+    self->descr
