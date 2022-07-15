@@ -214,4 +214,7 @@ argparse_describe(struct argparse *self, const char *description,
                   const char *epilog)
 {
     self->description = description;
-    self->epilog      = epilo
+    self->epilog      = epilog;
+}
+
+int
