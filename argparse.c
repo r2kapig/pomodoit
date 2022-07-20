@@ -218,4 +218,4 @@ argparse_describe(struct argparse *self, const char *description,
 }
 
 int
-argparse_parse(struct argparse *self, in
+argparse_parse(struct argparse *self, int argc, 
