@@ -218,4 +218,6 @@ argparse_describe(struct argparse *self, const char *description,
 }
 
 int
-argparse_parse(struct argparse *self, int argc, const char **argv
+argparse_parse(struct argparse *self, int argc, const char **argv)
+{
+    sel
