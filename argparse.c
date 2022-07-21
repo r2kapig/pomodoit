@@ -220,4 +220,5 @@ argparse_describe(struct argparse *self, const char *description,
 int
 argparse_parse(struct argparse *self, int argc, const char **argv)
 {
-    self->argc = argc - 
+    self->argc = argc - 1;
+    s
