@@ -222,4 +222,4 @@ argparse_parse(struct argparse *self, int argc, const char **argv)
 {
     self->argc = argc - 1;
     self->argv = argv + 1;
-    self->ou
+    self->out  = argv;
