@@ -227,4 +227,4 @@ argparse_parse(struct argparse *self, int argc, const char **argv)
     argparse_options_check(self->options);
 
     for (; self->argc; self->argc--, self->argv++) {
-    
+        const
