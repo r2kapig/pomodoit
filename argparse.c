@@ -228,4 +228,4 @@ argparse_parse(struct argparse *self, int argc, const char **argv)
 
     for (; self->argc; self->argc--, self->argv++) {
         const char *arg = self->argv[0];
-        if 
+        if (arg[0] !=
