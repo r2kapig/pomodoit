@@ -230,4 +230,5 @@ argparse_parse(struct argparse *self, int argc, const char **argv)
         const char *arg = self->argv[0];
         if (arg[0] != '-' || !arg[1]) {
             if (self->flags & ARGPARSE_STOP_AT_NON_OPTION) {
-                goto 
+                goto end;
+         
