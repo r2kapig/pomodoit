@@ -232,4 +232,4 @@ argparse_parse(struct argparse *self, int argc, const char **argv)
             if (self->flags & ARGPARSE_STOP_AT_NON_OPTION) {
                 goto end;
             }
-            // if it's
+            // if it's not opt
