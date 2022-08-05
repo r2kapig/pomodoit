@@ -233,4 +233,5 @@ argparse_parse(struct argparse *self, int argc, const char **argv)
                 goto end;
             }
             // if it's not option or is a single char '-', copy verbatim
-            self->out[self->cpidx++] = sel
+            self->out[self->cpidx++] = self->argv[0];
+       
