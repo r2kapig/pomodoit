@@ -236,4 +236,4 @@ argparse_parse(struct argparse *self, int argc, const char **argv)
             self->out[self->cpidx++] = self->argv[0];
             continue;
         }
-  
+       
