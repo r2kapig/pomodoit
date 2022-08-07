@@ -237,4 +237,5 @@ argparse_parse(struct argparse *self, int argc, const char **argv)
             continue;
         }
         // short option
-        if (arg[1] != '-') 
+        if (arg[1] != '-') {
+         
