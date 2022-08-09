@@ -239,4 +239,4 @@ argparse_parse(struct argparse *self, int argc, const char **argv)
         // short option
         if (arg[1] != '-') {
             self->optvalue = arg + 1;
-            switch (a
+            switch (argparse_sho
