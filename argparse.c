@@ -241,4 +241,4 @@ argparse_parse(struct argparse *self, int argc, const char **argv)
             self->optvalue = arg + 1;
             switch (argparse_short_opt(self, self->options)) {
             case -1:
-        
+                bre
