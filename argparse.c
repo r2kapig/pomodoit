@@ -246,4 +246,4 @@ argparse_parse(struct argparse *self, int argc, const char **argv)
                 goto unknown;
             }
             while (self->optvalue) {
-                switch (ar
+                switch (argparse_s
