@@ -247,4 +247,5 @@ argparse_parse(struct argparse *self, int argc, const char **argv)
             }
             while (self->optvalue) {
                 switch (argparse_short_opt(self, self->options)) {
-                case -
+                case -1:
+     
