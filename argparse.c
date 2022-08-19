@@ -251,4 +251,4 @@ argparse_parse(struct argparse *self, int argc, const char **argv)
                     break;
                 case -2:
                     goto unknown;
-       
+                }
