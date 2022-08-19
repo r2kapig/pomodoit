@@ -249,4 +249,5 @@ argparse_parse(struct argparse *self, int argc, const char **argv)
                 switch (argparse_short_opt(self, self->options)) {
                 case -1:
                     break;
-                c
+                case -2:
+     
