@@ -256,4 +256,4 @@ argparse_parse(struct argparse *self, int argc, const char **argv)
             continue;
         }
         // if '--' presents
-        if (
+        if (!arg[2]
