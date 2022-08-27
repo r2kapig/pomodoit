@@ -259,4 +259,5 @@ argparse_parse(struct argparse *self, int argc, const char **argv)
         if (!arg[2]) {
             self->argc--;
             self->argv++;
-            br
+            break;
+        
