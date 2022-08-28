@@ -262,4 +262,5 @@ argparse_parse(struct argparse *self, int argc, const char **argv)
             break;
         }
         // long option
-        switch (argparse_long_opt(self, self->options)) 
+        switch (argparse_long_opt(self, self->options)) {
+       
