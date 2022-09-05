@@ -271,4 +271,4 @@ argparse_parse(struct argparse *self, int argc, const char **argv)
         continue;
 
 unknown:
-        fprintf(stderr, "error: unknown optio
+        fprintf(stderr, "error: unknown option `%s`\
