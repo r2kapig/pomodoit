@@ -272,4 +272,4 @@ argparse_parse(struct argparse *self, int argc, const char **argv)
 
 unknown:
         fprintf(stderr, "error: unknown option `%s`\n", self->argv[0]);
-        argparse
+        argparse_usage(sel
