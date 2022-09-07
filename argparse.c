@@ -274,4 +274,4 @@ unknown:
         fprintf(stderr, "error: unknown option `%s`\n", self->argv[0]);
         argparse_usage(self);
         if (!(self->flags & ARGPARSE_IGNORE_UNKNOWN_ARGS)) {
-     
+            ex
