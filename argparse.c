@@ -275,4 +275,5 @@ unknown:
         argparse_usage(self);
         if (!(self->flags & ARGPARSE_IGNORE_UNKNOWN_ARGS)) {
             exit(EXIT_FAILURE);
-       
+        }
+    }
