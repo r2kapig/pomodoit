@@ -279,4 +279,4 @@ unknown:
     }
 
 end:
-    memmov
+    memmove(self->o
