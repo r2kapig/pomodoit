@@ -279,4 +279,4 @@ unknown:
     }
 
 end:
-    memmove(self->out + self->cpidx, sel
+    memmove(self->out + self->cpidx, self->argv,
