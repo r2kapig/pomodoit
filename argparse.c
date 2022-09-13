@@ -283,4 +283,4 @@ end:
             self->argc * sizeof(*self->out));
     self->out[self->cpidx + self->argc] = NULL;
 
-    return self-
+    return self->c
