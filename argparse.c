@@ -287,4 +287,4 @@ end:
 }
 
 void
-argparse_usag
+argparse_usage(stru
