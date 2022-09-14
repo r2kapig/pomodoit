@@ -285,3 +285,6 @@ end:
 
     return self->cpidx + self->argc;
 }
+
+void
+argp
