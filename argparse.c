@@ -288,3 +288,5 @@ end:
 
 void
 argparse_usage(struct argparse *self)
+{
+    if 
