@@ -289,4 +289,4 @@ end:
 void
 argparse_usage(struct argparse *self)
 {
-    if 
+    if (self->u
