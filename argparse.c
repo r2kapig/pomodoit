@@ -290,4 +290,4 @@ void
 argparse_usage(struct argparse *self)
 {
     if (self->usages) {
-        
+        fprintf(stdou
