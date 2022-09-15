@@ -287,4 +287,4 @@ end:
 }
 
 void
-argparse_usage(struct argparse
+argparse_usage(struct argparse *self)
