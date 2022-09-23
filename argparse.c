@@ -297,4 +297,4 @@ argparse_usage(struct argparse *self)
         fprintf(stdout, "Usage:\n");
     }
 
-    /
+    // print desc
