@@ -298,4 +298,4 @@ argparse_usage(struct argparse *self)
     }
 
     // print description
-    i
+    if (self->de
