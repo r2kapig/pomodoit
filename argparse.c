@@ -299,4 +299,6 @@ argparse_usage(struct argparse *self)
 
     // print description
     if (self->description)
-        fprintf(stdout, "%s\n", self->descriptio
+        fprintf(stdout, "%s\n", self->description);
+
+    fpu
