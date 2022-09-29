@@ -301,4 +301,4 @@ argparse_usage(struct argparse *self)
     if (self->description)
         fprintf(stdout, "%s\n", self->description);
 
-    fpu
+    fputc('\n', stdout
