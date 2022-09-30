@@ -306,4 +306,5 @@ argparse_usage(struct argparse *self)
     const struct argparse_option *options;
 
     // figure out best width
-    size_t usage_opts_wid
+    size_t usage_opts_width = 0;
+    size_t 
