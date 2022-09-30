@@ -303,4 +303,4 @@ argparse_usage(struct argparse *self)
 
     fputc('\n', stdout);
 
-    const struct argparse_option *o
+    const struct argparse_option *options;
