@@ -307,4 +307,5 @@ argparse_usage(struct argparse *self)
 
     // figure out best width
     size_t usage_opts_width = 0;
-    size_t 
+    size_t len;
+ 
