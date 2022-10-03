@@ -309,4 +309,4 @@ argparse_usage(struct argparse *self)
     size_t usage_opts_width = 0;
     size_t len;
     options = self->options;
-    for (; options->ty
+    for (; options->type != ARGPA
