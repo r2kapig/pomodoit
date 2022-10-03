@@ -310,3 +310,4 @@ argparse_usage(struct argparse *self)
     size_t len;
     options = self->options;
     for (; options->type != ARGPARSE_OPT_END; options++) {
+        len =
