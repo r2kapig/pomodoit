@@ -312,4 +312,5 @@ argparse_usage(struct argparse *self)
     for (; options->type != ARGPARSE_OPT_END; options++) {
         len = 0;
         if ((options)->short_name) {
-            len += 2
+            len += 2;
+        
