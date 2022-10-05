@@ -315,4 +315,4 @@ argparse_usage(struct argparse *self)
             len += 2;
         }
         if ((options)->short_name && (options)->long_name) {
-            len += 2;         
+            len += 2;           // separ
