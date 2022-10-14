@@ -318,4 +318,5 @@ argparse_usage(struct argparse *self)
             len += 2;           // separator ", "
         }
         if ((options)->long_name) {
-            len += strlen((options)->long_name) 
+            len += strlen((options)->long_name) + 2;
+       
