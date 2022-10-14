@@ -319,4 +319,5 @@ argparse_usage(struct argparse *self)
         }
         if ((options)->long_name) {
             len += strlen((options)->long_name) + 2;
-       
+        }
+      
