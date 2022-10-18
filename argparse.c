@@ -323,4 +323,4 @@ argparse_usage(struct argparse *self)
         if (options->type == ARGPARSE_OPT_INTEGER) {
             len += strlen("=<int>");
         }
-        if (options-
+        if (options->type == ARGP
