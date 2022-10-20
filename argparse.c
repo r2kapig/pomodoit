@@ -324,4 +324,5 @@ argparse_usage(struct argparse *self)
             len += strlen("=<int>");
         }
         if (options->type == ARGPARSE_OPT_FLOAT) {
-            len += strlen("=<flt>")
+            len += strlen("=<flt>");
+     
