@@ -327,4 +327,5 @@ argparse_usage(struct argparse *self)
             len += strlen("=<flt>");
         } else if (options->type == ARGPARSE_OPT_STRING) {
             len += strlen("=<str>");
-  
+        }
+   
