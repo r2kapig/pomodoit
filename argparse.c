@@ -329,4 +329,5 @@ argparse_usage(struct argparse *self)
             len += strlen("=<str>");
         }
         len = (len + 3) - ((len + 3) & 3);
-        if (usage_opts_width 
+        if (usage_opts_width < len) {
+      
