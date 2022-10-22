@@ -328,4 +328,4 @@ argparse_usage(struct argparse *self)
         } else if (options->type == ARGPARSE_OPT_STRING) {
             len += strlen("=<str>");
         }
-   
+        len = (l
