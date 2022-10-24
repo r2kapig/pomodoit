@@ -332,3 +332,5 @@ argparse_usage(struct argparse *self)
         if (usage_opts_width < len) {
             usage_opts_width = len;
         }
+    }
+    u
