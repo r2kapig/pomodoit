@@ -330,4 +330,5 @@ argparse_usage(struct argparse *self)
         }
         len = (len + 3) - ((len + 3) & 3);
         if (usage_opts_width < len) {
-            usage_opts_width = l
+            usage_opts_width = len;
+        }
