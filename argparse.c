@@ -333,4 +333,4 @@ argparse_usage(struct argparse *self)
             usage_opts_width = len;
         }
     }
-    usage_opts_w
+    usage_opts_width
