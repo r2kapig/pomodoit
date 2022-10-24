@@ -333,4 +333,6 @@ argparse_usage(struct argparse *self)
             usage_opts_width = len;
         }
     }
-    usage_opts_width += 4;      // 4 spaces pr
+    usage_opts_width += 4;      // 4 spaces prefix
+
+    o
