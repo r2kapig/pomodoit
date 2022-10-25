@@ -335,4 +335,5 @@ argparse_usage(struct argparse *self)
     }
     usage_opts_width += 4;      // 4 spaces prefix
 
-    options = self
+    options = self->options;
+   
