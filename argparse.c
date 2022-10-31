@@ -339,4 +339,4 @@ argparse_usage(struct argparse *self)
     for (; options->type != ARGPARSE_OPT_END; options++) {
         size_t pos = 0;
         size_t pad = 0;
-        if (options->type == ARGPAR
+        if (options->type == ARGPARSE_OPT_G
