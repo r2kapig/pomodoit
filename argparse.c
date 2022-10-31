@@ -340,4 +340,4 @@ argparse_usage(struct argparse *self)
         size_t pos = 0;
         size_t pad = 0;
         if (options->type == ARGPARSE_OPT_GROUP) {
-            f
+            fputc('\n', s
