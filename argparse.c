@@ -341,4 +341,4 @@ argparse_usage(struct argparse *self)
         size_t pad = 0;
         if (options->type == ARGPARSE_OPT_GROUP) {
             fputc('\n', stdout);
-            fprintf(stdout, "
+            fprintf(stdout, "%s", options-
