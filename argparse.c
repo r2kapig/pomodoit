@@ -344,4 +344,5 @@ argparse_usage(struct argparse *self)
             fprintf(stdout, "%s", options->help);
             fputc('\n', stdout);
             continue;
+        }
  
