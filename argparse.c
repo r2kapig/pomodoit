@@ -345,4 +345,4 @@ argparse_usage(struct argparse *self)
             fputc('\n', stdout);
             continue;
         }
- 
+        pos
