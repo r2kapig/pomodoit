@@ -346,4 +346,4 @@ argparse_usage(struct argparse *self)
             continue;
         }
         pos = fprintf(stdout, "    ");
-        if (options
+        if (options->short_name) {
