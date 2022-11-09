@@ -349,4 +349,4 @@ argparse_usage(struct argparse *self)
         if (options->short_name) {
             pos += fprintf(stdout, "-%c", options->short_name);
         }
-        if (opti
+        if (options->l
