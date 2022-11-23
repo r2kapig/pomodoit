@@ -355,4 +355,4 @@ argparse_usage(struct argparse *self)
         if (options->long_name) {
             pos += fprintf(stdout, "--%s", options->long_name);
         }
-        if (options->type 
+        if (options->type == ARGPARSE_OP
