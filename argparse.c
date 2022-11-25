@@ -357,4 +357,4 @@ argparse_usage(struct argparse *self)
         }
         if (options->type == ARGPARSE_OPT_INTEGER) {
             pos += fprintf(stdout, "=<int>");
-        } else if (options->type == ARG
+        } else if (options->type == ARGPARSE_O
