@@ -359,4 +359,4 @@ argparse_usage(struct argparse *self)
             pos += fprintf(stdout, "=<int>");
         } else if (options->type == ARGPARSE_OPT_FLOAT) {
             pos += fprintf(stdout, "=<flt>");
-        } else if (options->ty
+        } else if (options->type == ARGPARS
