@@ -360,4 +360,4 @@ argparse_usage(struct argparse *self)
         } else if (options->type == ARGPARSE_OPT_FLOAT) {
             pos += fprintf(stdout, "=<flt>");
         } else if (options->type == ARGPARSE_OPT_STRING) {
-  
+            
