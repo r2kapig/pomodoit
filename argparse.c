@@ -362,4 +362,4 @@ argparse_usage(struct argparse *self)
         } else if (options->type == ARGPARSE_OPT_STRING) {
             pos += fprintf(stdout, "=<str>");
         }
-        if (pos <= us
+        if (pos <= usage_opts
