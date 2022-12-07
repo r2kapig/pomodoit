@@ -366,4 +366,4 @@ argparse_usage(struct argparse *self)
             pad = usage_opts_width - pos;
         } else {
             fputc('\n', stdout);
-     
+            pad =
