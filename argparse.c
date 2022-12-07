@@ -363,4 +363,5 @@ argparse_usage(struct argparse *self)
             pos += fprintf(stdout, "=<str>");
         }
         if (pos <= usage_opts_width) {
-            pad = usage_opts_widt
+            pad = usage_opts_width - pos;
+  
