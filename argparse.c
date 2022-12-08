@@ -368,3 +368,4 @@ argparse_usage(struct argparse *self)
             fputc('\n', stdout);
             pad = usage_opts_width;
         }
+        fp
