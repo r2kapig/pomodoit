@@ -371,4 +371,5 @@ argparse_usage(struct argparse *self)
         fprintf(stdout, "%*s%s\n", (int)pad + 2, "", options->help);
     }
 
-    // 
+    // print epilog
+  
