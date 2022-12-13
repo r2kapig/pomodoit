@@ -372,4 +372,4 @@ argparse_usage(struct argparse *self)
     }
 
     // print epilog
-  
+    if 
