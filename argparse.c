@@ -373,4 +373,4 @@ argparse_usage(struct argparse *self)
 
     // print epilog
     if (self->epilog)
-        fprintf(stdout, "%s\n", 
+        fprintf(stdout, "%s\n", self->epilog)
