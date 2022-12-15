@@ -376,3 +376,5 @@ argparse_usage(struct argparse *self)
         fprintf(stdout, "%s\n", self->epilog);
 }
 
+int
+argpar
