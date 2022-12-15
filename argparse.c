@@ -377,4 +377,4 @@ argparse_usage(struct argparse *self)
 }
 
 int
-argpar
+argparse_hel
