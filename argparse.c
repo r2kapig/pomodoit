@@ -381,4 +381,5 @@ argparse_help_cb_no_exit(struct argparse *self,
                          const struct argparse_option *option)
 {
     (void)option;
-    argparse_usage(sel
+    argparse_usage(self);
+    re
