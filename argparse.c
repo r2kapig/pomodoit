@@ -385,3 +385,5 @@ argparse_help_cb_no_exit(struct argparse *self,
     return (EXIT_SUCCESS);
 }
 
+int
+argpars
