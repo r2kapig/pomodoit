@@ -386,4 +386,4 @@ argparse_help_cb_no_exit(struct argparse *self,
 }
 
 int
-argparse_help_cb(st
+argparse_help_cb(struct argpar
