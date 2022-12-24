@@ -26,3 +26,13 @@ enum argparse_flag {
     ARGPARSE_STOP_AT_NON_OPTION  = 1 << 0,
     ARGPARSE_IGNORE_UNKNOWN_ARGS = 1 << 1,
 };
+
+enum argparse_option_type {
+    /* special */
+    ARGPARSE_OPT_END,
+    ARGPARSE_OPT_GROUP,
+    /* options with no arguments */
+    ARGPARSE_OPT_BOOLEAN,
+    ARGPARSE_OPT_BIT,
+    /* options with arguments (optional or required) */
+    ARGPARSE_OPT_INTEGER,
