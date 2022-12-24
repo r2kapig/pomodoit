@@ -389,4 +389,4 @@ int
 argparse_help_cb(struct argparse *self, const struct argparse_option *option)
 {
     argparse_help_cb_no_exit(self, option);
- 
+    e
