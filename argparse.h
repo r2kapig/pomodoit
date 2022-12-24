@@ -18,3 +18,11 @@ extern "C" {
 
 struct argparse;
 struct argparse_option;
+
+typedef int argparse_callback (struct argparse *self,
+                               const struct argparse_option *option);
+
+enum argparse_flag {
+    ARGPARSE_STOP_AT_NON_OPTION  = 1 << 0,
+    ARGPARSE_IGNORE_UNKNOWN_ARGS = 1 << 1,
+};
