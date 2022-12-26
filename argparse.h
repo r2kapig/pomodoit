@@ -47,3 +47,9 @@ enum argparse_option_flags {
 /**
  *  argparse option
  *
+ *  `type`:
+ *    holds the type of the option, you must have an ARGPARSE_OPT_END last in your
+ *    array.
+ *
+ *  `short_name`:
+ *    the character to use as a short option name, '\0' if none.
