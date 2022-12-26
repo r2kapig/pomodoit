@@ -36,3 +36,14 @@ enum argparse_option_type {
     ARGPARSE_OPT_BIT,
     /* options with arguments (optional or required) */
     ARGPARSE_OPT_INTEGER,
+    ARGPARSE_OPT_FLOAT,
+    ARGPARSE_OPT_STRING,
+};
+
+enum argparse_option_flags {
+    OPT_NONEG = 1,              /* disable negation */
+};
+
+/**
+ *  argparse option
+ *
