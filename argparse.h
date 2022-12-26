@@ -64,3 +64,17 @@ enum argparse_option_flags {
  *    the short help message associated to what the option does.
  *    Must never be NULL (except for ARGPARSE_OPT_END).
  *
+ *  `callback`:
+ *    function is called when corresponding argument is parsed.
+ *
+ *  `data`:
+ *    associated data. Callbacks can use it like they want.
+ *
+ *  `flags`:
+ *    option flags.
+ */
+struct argparse_option {
+    enum argparse_option_type type;
+    const char short_name;
+    const char *long_name;
+    void *value;
