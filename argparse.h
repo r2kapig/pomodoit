@@ -78,3 +78,10 @@ struct argparse_option {
     const char short_name;
     const char *long_name;
     void *value;
+    const char *help;
+    argparse_callback *callback;
+    intptr_t data;
+    int flags;
+};
+
+/**
