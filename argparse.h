@@ -53,3 +53,14 @@ enum argparse_option_flags {
  *
  *  `short_name`:
  *    the character to use as a short option name, '\0' if none.
+ *
+ *  `long_name`:
+ *    the long option name, without the leading dash, NULL if none.
+ *
+ *  `value`:
+ *    stores pointer to the value to be filled.
+ *
+ *  `help`:
+ *    the short help message associated to what the option does.
+ *    Must never be NULL (except for ARGPARSE_OPT_END).
+ *
