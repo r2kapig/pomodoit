@@ -101,3 +101,16 @@ struct argparse {
     int cpidx;
     const char *optvalue;       // current option value
 };
+
+// built-in callbacks
+int argparse_help_cb(struct argparse *self,
+                     const struct argparse_option *option);
+int argparse_help_cb_no_exit(struct argparse *self,
+                             const struct argparse_option *option);
+
+// built-in option macros
+#define OPT_END()        { ARGPARSE_OPT_END, 0, NULL, NULL, 0, NULL, 0, 0 }
+#define OPT_BOOLEAN(...) { ARGPARSE_OPT_BOOLEAN, __VA_ARGS__ }
+#define OPT_BIT(...)     { ARGPARSE_OPT_BIT, __VA_ARGS__ }
+#define OPT_INTEGER(...) { ARGPARSE_OPT_INTEGER, __VA_ARGS__ }
+#define OPT_FLOAT(...)   { ARGPARSE_OPT_FLOAT, __VA_ARGS__ }
