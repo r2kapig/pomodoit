@@ -85,3 +85,19 @@ struct argparse_option {
 };
 
 /**
+ * argpparse
+ */
+struct argparse {
+    // user supplied
+    const struct argparse_option *options;
+    const char *const *usages;
+    int flags;
+    const char *description;    // a description after usage
+    const char *epilog;         // a description at the end
+    // internal context
+    int argc;
+    const char **argv;
+    const char **out;
+    int cpidx;
+    const char *optvalue;       // current option value
+};
