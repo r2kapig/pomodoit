@@ -37,3 +37,16 @@ main(int argc, const char **argv)
         OPT_BIT(0, "exec", &perms, "exec perm", NULL, PERM_EXEC, 0),
         OPT_END(),
     };
+
+    struct argparse argparse;
+    argparse_init(&argparse, options, usages, 0);
+    argparse_describe(&argparse, "\nA brief description of what the program does and how it works.", "\nAdditional description of the program after the description of the arguments.");
+    argc = argparse_parse(&argparse, argc, argv);
+    if (force != 0)
+        printf("force: %d\n", force);
+    if (test != 0)
+        printf("test: %d\n", test);
+    if (path != NULL)
+        printf("path: %s\n", path);
+    if (int_num != 0)
+        printf("int_num: %d\n", int_num);
