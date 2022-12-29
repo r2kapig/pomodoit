@@ -128,3 +128,7 @@ int argparse_parse(struct argparse *self, int argc, const char **argv);
 void argparse_usage(struct argparse *self);
 
 #ifdef __cplusplus
+}
+#endif
+
+#endif
