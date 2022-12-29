@@ -50,3 +50,13 @@ main(int argc, const char **argv)
         printf("path: %s\n", path);
     if (int_num != 0)
         printf("int_num: %d\n", int_num);
+    if (flt_num != 0)
+        printf("flt_num: %g\n", flt_num);
+    if (argc != 0) {
+        printf("argc: %d\n", argc);
+        int i;
+        for (i = 0; i < argc; i++) {
+            printf("argv[%d]: %s\n", i, *(argv + i));
+        }
+    }
+    if (perms) {
