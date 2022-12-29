@@ -16,3 +16,14 @@ static const char *const usages[] = {
 
 int
 main(int argc, const char **argv)
+{
+    int force = 0;
+    int test = 0;
+    int int_num = 0;
+    float flt_num = 0.f;
+    const char *path = NULL;
+    int perms = 0;
+    struct argparse_option options[] = {
+        OPT_HELP(),
+        OPT_GROUP("Basic options"),
+        OPT_BOOLEAN('f', "force", &force, "force to do", NULL, 0, 0),
