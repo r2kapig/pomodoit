@@ -119,3 +119,12 @@ int argparse_help_cb_no_exit(struct argparse *self,
 #define OPT_HELP()       OPT_BOOLEAN('h', "help", NULL,                 \
                                      "show this help message and exit", \
                                      argparse_help_cb, 0, OPT_NONEG)
+
+int argparse_init(struct argparse *self, struct argparse_option *options,
+                  const char *const *usages, int flags);
+void argparse_describe(struct argparse *self, const char *description,
+                       const char *epilog);
+int argparse_parse(struct argparse *self, int argc, const char **argv);
+void argparse_usage(struct argparse *self);
+
+#ifdef __cplusplus
