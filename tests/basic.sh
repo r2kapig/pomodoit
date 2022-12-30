@@ -12,3 +12,11 @@ argv[0]: a'
 is "$(./basic -f -f --force --no-force 2>&1)" 'force: 2'
 
 is "$(./basic -i 2>&1)" 'error: option `-i` requires a value'
+
+is "$(./basic -i 2 2>&1)" 'int_num: 2'
+
+is "$(./basic -i2 2>&1)" 'int_num: 2'
+
+is "$(./basic -ia 2>&1)" 'error: option `-i` expects an integer value'
+
+is "$(./basic -i 0xFFFFFFFFFFFFFFFFF 2>&1)" \
