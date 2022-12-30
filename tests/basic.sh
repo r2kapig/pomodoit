@@ -3,3 +3,12 @@
 
 . $(dirname ${BASH_SOURCE[0]})/tap-functions
 plan_no_plan
+
+is "$(./basic -f --path=/path/to/file a 2>&1)" 'force: 1
+path: /path/to/file
+argc: 1
+argv[0]: a'
+
+is "$(./basic -f -f --force --no-force 2>&1)" 'force: 2'
+
+is "$(./basic -i 2>&1)" 'error: option `-i` requires a value'
