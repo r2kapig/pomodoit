@@ -34,3 +34,13 @@ is "$(./basic -s 1e999 2>&1)" \
 is "$(./basic -f -- do -f -h 2>&1)" 'force: 1
 argc: 3
 argv[0]: do
+argv[1]: -f
+argv[2]: -h'
+
+is "$(./basic -tf 2>&1)" 'force: 1
+test: 1'
+
+is "$(./basic --read --write 2>&1)" 'perms: 3'
+
+help_usage='Usage: basic [options] [[--] args]
+   or: basic [options]
