@@ -29,3 +29,8 @@ is "$(./basic -s2.4 2>&1)" 'flt_num: 2.4'
 is "$(./basic -sa 2>&1)" 'error: option `-s` expects a numerical value'
 
 is "$(./basic -s 1e999 2>&1)" \
+   'error: option `-s` numerical result out of range'
+
+is "$(./basic -f -- do -f -h 2>&1)" 'force: 1
+argc: 3
+argv[0]: do
