@@ -20,3 +20,12 @@ is "$(./basic -i2 2>&1)" 'int_num: 2'
 is "$(./basic -ia 2>&1)" 'error: option `-i` expects an integer value'
 
 is "$(./basic -i 0xFFFFFFFFFFFFFFFFF 2>&1)" \
+   'error: option `-i` numerical result out of range'
+
+is "$(./basic -s 2.4 2>&1)" 'flt_num: 2.4'
+
+is "$(./basic -s2.4 2>&1)" 'flt_num: 2.4'
+
+is "$(./basic -sa 2>&1)" 'error: option `-s` expects a numerical value'
+
+is "$(./basic -s 1e999 2>&1)" \
