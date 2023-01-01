@@ -44,3 +44,18 @@ is "$(./basic --read --write 2>&1)" 'perms: 3'
 
 help_usage='Usage: basic [options] [[--] args]
    or: basic [options]
+
+A brief description of what the program does and how it works.
+
+    -h, --help            show this help message and exit
+
+Basic options
+    -f, --force           force to do
+    -t, --test            test only
+    -p, --path=<str>      path to read
+    -i, --int=<int>       selected integer
+    -s, --float=<flt>     selected float
+
+Bits options
+    --read                read perm
+    --write               write perm
