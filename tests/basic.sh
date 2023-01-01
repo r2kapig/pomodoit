@@ -59,3 +59,8 @@ Basic options
 Bits options
     --read                read perm
     --write               write perm
+    --exec                exec perm
+
+Additional description of the program after the description of the arguments.'
+
+is "$(./basic -h)" "$help_usage"
