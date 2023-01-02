@@ -9,3 +9,17 @@
 static const char *const usages[] = {
     "subcommands [options] [cmd] [args]",
     NULL,
+};
+
+struct cmd_struct {
+    const char *cmd;
+    int (*fn) (int, const char **);
+};
+
+int
+cmd_foo(int argc, const char **argv)
+{
+    printf("executing subcommand foo\n");
+    printf("argc: %d\n", argc);
+    for (int i = 0; i < argc; i++) {
+        printf("argv[%d]: %s\n", i, *(argv + i));
