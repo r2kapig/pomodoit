@@ -64,3 +64,7 @@ Bits options
 Additional description of the program after the description of the arguments.'
 
 is "$(./basic -h)" "$help_usage"
+
+is "$(./basic --help)" "$help_usage"
+
+is "$(./basic --no-help 2>&1)" 'error: unknown option `--no-help`'$'\n'"$help_usage"
