@@ -49,3 +49,15 @@ int
 cmd_bar(int argc, const char **argv)
 {
     printf("executing subcommand bar\n");
+    for (int i = 0; i < argc; i++) {
+        printf("argv[%d]: %s\n", i, *(argv + i));
+    }
+    return 0;
+}
+
+static struct cmd_struct commands[] = {
+    {"foo", cmd_foo},
+    {"bar", cmd_bar},
+};
+
+int
