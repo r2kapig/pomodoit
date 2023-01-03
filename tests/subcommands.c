@@ -34,3 +34,18 @@ cmd_foo(int argc, const char **argv)
         OPT_STRING('p', "path", &path, "path to read", NULL, 0, 0),
         OPT_END(),
     };
+    struct argparse argparse;
+    argparse_init(&argparse, options, usages, 0);
+    argc = argparse_parse(&argparse, argc, argv);
+    printf("after argparse_parse:\n");
+    printf("argc: %d\n", argc);
+    for (int i = 0; i < argc; i++) {
+        printf("argv[%d]: %s\n", i, *(argv + i));
+    }
+    return 0;
+}
+
+int
+cmd_bar(int argc, const char **argv)
+{
+    printf("executing subcommand bar\n");
