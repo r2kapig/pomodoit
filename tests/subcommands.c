@@ -61,3 +61,11 @@ static struct cmd_struct commands[] = {
 };
 
 int
+main(int argc, const char **argv)
+{
+    struct argparse argparse;
+    struct argparse_option options[] = {
+        OPT_HELP(),
+        OPT_END(),
+    };
+    argparse_init(&argparse, options, usages, ARGPARSE_STOP_AT_NON_OPTION);
