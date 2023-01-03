@@ -69,3 +69,13 @@ main(int argc, const char **argv)
         OPT_END(),
     };
     argparse_init(&argparse, options, usages, ARGPARSE_STOP_AT_NON_OPTION);
+    argc = argparse_parse(&argparse, argc, argv);
+    if (argc < 1) {
+        argparse_usage(&argparse);
+        return -1;
+    }
+
+    /* Try to run command with args provided. */
+    struct cmd_struct *cmd = NULL;
+    for (int i = 0; i < ARRAY_SIZE(commands); i++) {
+        if (!strcmp(commands[i].cmd, argv[0])) {
