@@ -79,3 +79,11 @@ main(int argc, const char **argv)
     struct cmd_struct *cmd = NULL;
     for (int i = 0; i < ARRAY_SIZE(commands); i++) {
         if (!strcmp(commands[i].cmd, argv[0])) {
+            cmd = &commands[i];
+        }
+    }
+    if (cmd) {
+        return cmd->fn(argc, argv);
+    }
+    return 0;
+}
