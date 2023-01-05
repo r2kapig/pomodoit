@@ -1,3 +1,3 @@
 #!/bin/bash
 
-. $(dirn
+. $(dirname ${BASH_S
