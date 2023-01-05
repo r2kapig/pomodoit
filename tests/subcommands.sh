@@ -1,3 +1,3 @@
 #!/bin/bash
 
-. $(dirname ${BASH_S
+. $(dirname ${BASH_SOURCE[0]}
