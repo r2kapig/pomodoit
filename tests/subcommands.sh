@@ -1,4 +1,6 @@
 #!/bin/bash
 
 . $(dirname ${BASH_SOURCE[0]})/tap-functions
-plan
+plan_no_plan
+
+is "
