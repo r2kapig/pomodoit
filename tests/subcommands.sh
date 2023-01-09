@@ -1,3 +1,4 @@
 #!/bin/bash
 
-. $(dirname ${BASH_SOURCE[0]})/tap-funct
+. $(dirname ${BASH_SOURCE[0]})/tap-functions
+plan
