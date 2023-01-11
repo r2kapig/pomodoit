@@ -4,3 +4,4 @@
 plan_no_plan
 
 is "$(./subcommands foo)" 'executing subcommand foo
+argc: 
