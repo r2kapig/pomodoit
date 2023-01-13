@@ -9,4 +9,4 @@ argv[0]: foo
 after argparse_parse:
 argc: 0'
 
-is "$(./subcomm
+is "$(./subcommands foo -
