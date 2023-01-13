@@ -6,4 +6,5 @@ plan_no_plan
 is "$(./subcommands foo)" 'executing subcommand foo
 argc: 1
 argv[0]: foo
-after argp
+after argparse_parse:
+a
