@@ -7,4 +7,4 @@ is "$(./subcommands foo)" 'executing subcommand foo
 argc: 1
 argv[0]: foo
 after argparse_parse:
-a
+argc: 0'
