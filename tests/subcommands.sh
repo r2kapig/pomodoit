@@ -12,4 +12,5 @@ argc: 0'
 is "$(./subcommands foo -t -p /path/to/file arg1)" 'executing subcommand foo
 argc: 5
 argv[0]: foo
-argv[
+argv[1]: -t
+a
