@@ -9,4 +9,4 @@ argv[0]: foo
 after argparse_parse:
 argc: 0'
 
-is "$(./subcommands foo -t -p /path/to/file 
+is "$(./subcommands foo -t -p /path/to/file arg1)" '
