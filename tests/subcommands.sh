@@ -15,4 +15,5 @@ argv[0]: foo
 argv[1]: -t
 argv[2]: -p
 argv[3]: /path/to/file
-argv[4]: 
+argv[4]: arg1
+aft
