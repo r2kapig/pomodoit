@@ -16,3 +16,7 @@ TODO=
 
 usage(){
 	cat <<'USAGE'
+tap-functions: A TAP-producing BASH library
+
+PLAN:
+  plan_no_plan
