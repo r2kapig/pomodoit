@@ -20,3 +20,15 @@ tap-functions: A TAP-producing BASH library
 
 PLAN:
   plan_no_plan
+  plan_skip_all [REASON]
+  plan_tests NB_TESTS
+
+TEST:
+  ok RESULT [NAME]
+  okx COMMAND
+  is RESULT EXPECTED [NAME]
+  isnt RESULT EXPECTED [NAME]
+  like RESULT PATTERN [NAME]
+  unlike RESULT PATTERN [NAME]
+  pass [NAME]
+  fail [NAME]
