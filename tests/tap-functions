@@ -1,0 +1,8 @@
+
+#!/bin/bash 
+
+
+_version='1.02'
+	
+_plan_set=0
+_no_plan=0
