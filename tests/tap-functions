@@ -44,3 +44,11 @@ SKIP:
 TODO:
   Specify TODO mode by setting $TODO:
     TODO="not implemented yet"
+    ok $result "some not implemented test"
+    unset TODO
+
+OTHER:
+  diag MSG
+
+EXAMPLE:
+  #!/bin/bash
