@@ -78,3 +78,10 @@ EXAMPLE:
   unset TODO
 USAGE
 	exit
+}
+
+opt=
+set_u=
+while getopts ":sx" opt ; do
+	case $_opt in
+        u) set_u=1 ;;
