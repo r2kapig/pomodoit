@@ -65,3 +65,10 @@ EXAMPLE:
   /bin/ls $HOME 1>&2
   ok $? "/bin/ls $HOME"
   # Same thing using okx shortcut
+  okx /bin/ls $HOME
+
+  [[ "`id -u`" != "0" ]]
+  i_am_not_root=$?
+  skip $i_am_not_root "Must be root" || {
+    okx ls /root
+  }
