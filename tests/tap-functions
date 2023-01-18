@@ -52,3 +52,9 @@ OTHER:
 
 EXAMPLE:
   #!/bin/bash
+
+  . tap-functions
+
+  plan_tests 7
+
+  me=$USER
