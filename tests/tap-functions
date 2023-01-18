@@ -72,3 +72,9 @@ EXAMPLE:
   skip $i_am_not_root "Must be root" || {
     okx ls /root
   }
+
+  TODO="figure out how to become root..."
+  okx [ "$HOME" == "/root" ]
+  unset TODO
+USAGE
+	exit
