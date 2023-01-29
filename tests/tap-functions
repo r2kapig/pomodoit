@@ -103,3 +103,14 @@ plan_no_plan(){
 
 	_plan_set=1
 	_no_plan=1
+
+	return 0
+}
+
+
+plan_skip_all(){
+	local reason=${1:-''}
+
+	(( _plan_set != 0 )) && _die "You tried to plan twice!"
+
+	_print_plan 0 "Skip $reason"
