@@ -114,3 +114,10 @@ plan_skip_all(){
 	(( _plan_set != 0 )) && _die "You tried to plan twice!"
 
 	_print_plan 0 "Skip $reason"
+
+	_skip_all=1
+	_plan_set=1
+	_exit 0
+
+	return 0
+}
