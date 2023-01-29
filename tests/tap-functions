@@ -97,3 +97,9 @@ unset opt set_u
 trap _exit EXIT
 
 
+
+plan_no_plan(){
+	(( _plan_set != 0 )) && "You tried to plan twice!"
+
+	_plan_set=1
+	_no_plan=1
