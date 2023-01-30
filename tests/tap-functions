@@ -121,3 +121,16 @@ plan_skip_all(){
 
 	return 0
 }
+
+
+plan_tests(){
+	local tests=${1:?}
+
+	(( _plan_set != 0 )) && _die "You tried to plan twice!"
+	(( tests == 0 )) && _die "You said to run 0 tests!  You've got to run something."
+
+	_print_plan $tests
+	_expected_tests=$tests
+	_plan_set=1
+
+	return $tests
