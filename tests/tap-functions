@@ -134,3 +134,11 @@ plan_tests(){
 	_plan_set=1
 
 	return $tests
+}
+
+
+_print_plan(){
+	local tests=${1:?}
+	local directive=${2:-''}
+
+	echo -n "1..$tests"
