@@ -142,3 +142,11 @@ _print_plan(){
 	local directive=${2:-''}
 
 	echo -n "1..$tests"
+	[[ -n "$directive" ]] && echo -n " # $directive"
+	echo
+}
+
+
+pass(){
+	local name=$1
+	ok 0 "$name"
