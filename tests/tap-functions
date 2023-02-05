@@ -164,3 +164,17 @@ fail(){
 ok(){
 	local result=${1:?}
 	local name=${2:-''}
+
+	(( _plan_set == 0 )) && _die "You tried to run a test without a plan!  Gotta have a plan."
+
+	_executed_tests=$(( $_executed_tests + 1 ))
+
+	if [[ -n "$name" ]] ; then
+		if _matches "$name" "^[0-9]+$" ; then
+			diag "    You named your test '$name'.  You shouldn't use numbers for your test names."
+			diag "    Very confusing."
+		fi
+	fi
+
+	if (( result != 0 )) ; then
+		echo -n "not "
