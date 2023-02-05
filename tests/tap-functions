@@ -150,3 +150,17 @@ _print_plan(){
 pass(){
 	local name=$1
 	ok 0 "$name"
+}
+
+
+fail(){
+	local name=$1
+	ok 1 "$name"
+}
+
+
+# This is the workhorse method that actually
+# prints the tests result.
+ok(){
+	local result=${1:?}
+	local name=${2:-''}
