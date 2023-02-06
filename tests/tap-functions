@@ -178,3 +178,13 @@ ok(){
 
 	if (( result != 0 )) ; then
 		echo -n "not "
+		_failed_tests=$(( _failed_tests + 1 ))
+	fi
+	echo -n "ok $_executed_tests"
+
+	if [[ -n "$name" ]] ; then
+		local ename=${name//\#/\\#}
+		echo -n " - $ename"
+	fi
+
+	if [[ -n "$TODO" ]] ; then
