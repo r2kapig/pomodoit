@@ -188,3 +188,13 @@ ok(){
 	fi
 
 	if [[ -n "$TODO" ]] ; then
+		echo -n " # TODO $TODO" ;
+		if (( result != 0 )) ; then
+			_failed_tests=$(( _failed_tests - 1 ))
+		fi
+	fi
+
+	echo
+	if (( result != 0 )) ; then
+		local file='tap-functions'
+		local func=
