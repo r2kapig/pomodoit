@@ -218,3 +218,15 @@ ok(){
 		else
 			diag "  Failed ${t}test in $backtrace"
 		fi
+	fi
+
+	return $result
+}
+
+
+okx(){
+	local command="$@"
+
+	local line=
+	diag "Output of '$command':"
+	$command | while read line ; do
