@@ -209,3 +209,12 @@ ok(){
 		local backtrace=
 		eval $(caller $i | (read line func file ; echo "backtrace=\"$file:$func() at line $line.\""))
 			
+		local t=
+		[[ -n "$TODO" ]] && t="(TODO) "
+
+		if [[ -n "$name" ]] ; then
+			diag "  Failed ${t}test '$name'"
+			diag "  in $backtrace"
+		else
+			diag "  Failed ${t}test in $backtrace"
+		fi
