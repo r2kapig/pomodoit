@@ -230,3 +230,11 @@ okx(){
 	local line=
 	diag "Output of '$command':"
 	$command | while read line ; do
+		diag "$line"
+	done
+	ok ${PIPESTATUS[0]} "$command"
+}
+
+
+_equals(){
+	local result=${1:?}
