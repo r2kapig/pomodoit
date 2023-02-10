@@ -274,3 +274,13 @@ _is_diag(){
 	diag "         got: '$result'" 
 	diag "    expected: '$expected'"
 }
+
+
+is(){
+	local result=${1:?}
+	local expected=${2:?}
+	local name=${3:-''}
+
+	_equals "$result" "$expected"
+	(( $? == 0 ))
+	ok $? "$name"
