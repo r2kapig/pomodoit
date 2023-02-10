@@ -284,3 +284,13 @@ is(){
 	_equals "$result" "$expected"
 	(( $? == 0 ))
 	ok $? "$name"
+	local r=$?
+	(( r != 0 )) && _is_diag "$result" "$expected"
+	return $r 
+}
+
+
+isnt(){
+	local result=${1:?}
+	local expected=${2:?}
+	local name=${3:-''}
