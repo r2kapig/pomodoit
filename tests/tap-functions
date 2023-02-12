@@ -311,3 +311,12 @@ like(){
 
 	_matches "$result" "$pattern"
 	(( $? == 0 ))
+	ok $? "$name"
+	local r=$?
+	(( r != 0 )) && diag "    '$result' doesn't match '$pattern'"
+	return $r
+}
+
+
+unlike(){
+	local result=${1:?}
