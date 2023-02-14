@@ -358,3 +358,8 @@ diag(){
 	fi
 	
 	return 1
+}
+
+	
+_die(){
+	local reason=${1:-'<unspecified error>'}
