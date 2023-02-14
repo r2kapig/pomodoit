@@ -341,3 +341,11 @@ skip(){
 		local i=
 		for (( i=0 ; i<$n ; i++ )) ; do
 			_executed_tests=$(( _executed_tests + 1 ))
+			echo "ok $_executed_tests # skip: $reason" 
+		done
+		return 0
+	else
+		return
+	fi
+}
+
