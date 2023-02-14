@@ -320,3 +320,14 @@ like(){
 
 unlike(){
 	local result=${1:?}
+	local pattern=${2:?}
+	local name=${3:-''}
+
+	_matches "$result" "$pattern"
+	(( $? != 0 ))
+	ok $? "$name"
+	local r=$?
+	(( r != 0 )) && diag "    '$result' matches '$pattern'"
+	return $r
+}
+
