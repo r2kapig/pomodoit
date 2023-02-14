@@ -349,3 +349,12 @@ skip(){
 	fi
 }
 
+
+diag(){
+	local msg=${1:?}
+
+	if [[ -n "$msg" ]] ; then
+		echo "# $msg"
+	fi
+	
+	return 1
