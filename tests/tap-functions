@@ -331,3 +331,13 @@ unlike(){
 	return $r
 }
 
+
+skip(){
+	local condition=${1:?}
+	local reason=${2:-''}
+	local n=${3:-1}
+
+	if (( condition == 0 )) ; then
+		local i=
+		for (( i=0 ; i<$n ; i++ )) ; do
+			_executed_tests=$(( _executed_tests + 1 ))
