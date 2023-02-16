@@ -363,3 +363,16 @@ diag(){
 	
 _die(){
 	local reason=${1:-'<unspecified error>'}
+
+	echo "$reason" >&2
+	_test_died=1
+	_exit 255
+}
+
+
+BAIL_OUT(){
+	local reason=${1:-''}
+
+	echo "Bail out! $reason" >&2
+	_exit 255
+}
