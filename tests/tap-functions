@@ -376,3 +376,12 @@ BAIL_OUT(){
 	echo "Bail out! $reason" >&2
 	_exit 255
 }
+
+
+_cleanup(){
+	local rc=0
+
+	if (( _plan_set == 0 )) ; then
+		diag "Looks like your test died before it could output anything."
+		return $rc
+	fi
