@@ -385,3 +385,12 @@ _cleanup(){
 		diag "Looks like your test died before it could output anything."
 		return $rc
 	fi
+
+	if (( _test_died != 0 )) ; then
+		diag "Looks like your test died just after $_executed_tests."
+		return $rc
+	fi
+
+	if (( _skip_all == 0 && _no_plan != 0 )) ; then
+		_print_plan $_executed_tests
+	fi
