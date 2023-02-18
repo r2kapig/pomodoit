@@ -394,3 +394,14 @@ _cleanup(){
 	if (( _skip_all == 0 && _no_plan != 0 )) ; then
 		_print_plan $_executed_tests
 	fi
+
+	local s=
+	if (( _no_plan == 0 && _expected_tests < _executed_tests )) ; then
+		s= ; (( _expected_tests > 1 )) && s=s
+		local extra=$(( _executed_tests - _expected_tests ))
+		diag "Looks like you planned $_expected_tests test$s but ran $extra extra."
+		rc=-1 ;
+	fi
+
+	if (( _no_plan == 0 && _expected_tests > _executed_tests )) ; then
+		s= ; (( _expected_tests > 1 )) && s=s
