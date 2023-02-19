@@ -415,3 +415,13 @@ _cleanup(){
 
 	return $rc
 }
+
+
+_exit_status(){
+	if (( _no_plan != 0 || _plan_set == 0 )) ; then
+		return $_failed_tests
+	fi
+
+	if (( _expected_tests < _executed_tests )) ; then
+		return $(( _executed_tests - _expected_tests  ))
+	fi
