@@ -405,3 +405,13 @@ _cleanup(){
 
 	if (( _no_plan == 0 && _expected_tests > _executed_tests )) ; then
 		s= ; (( _expected_tests > 1 )) && s=s
+		diag "Looks like you planned $_expected_tests test$s but only ran $_executed_tests."
+	fi
+
+	if (( _failed_tests > 0 )) ; then
+		s= ; (( _failed_tests > 1 )) && s=s
+		diag "Looks like you failed $_failed_tests test$s of $_executed_tests."
+	fi
+
+	return $rc
+}
