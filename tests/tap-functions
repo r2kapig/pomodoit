@@ -425,3 +425,14 @@ _exit_status(){
 	if (( _expected_tests < _executed_tests )) ; then
 		return $(( _executed_tests - _expected_tests  ))
 	fi
+
+	return $(( _failed_tests + ( _expected_tests - _executed_tests )))
+}
+
+
+_exit(){
+	local rc=${1:-''}
+	if [[ -z "$rc" ]] ; then
+		_exit_status
+		rc=$?
+	fi
