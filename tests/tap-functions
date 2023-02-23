@@ -436,3 +436,10 @@ _exit(){
 		_exit_status
 		rc=$?
 	fi
+
+	_cleanup
+	local alt_rc=$?
+	(( alt_rc != 0 )) && rc=$alt_rc
+	trap - EXIT
+	exit $rc
+}
